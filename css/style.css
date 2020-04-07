@@ -1,0 +1,199 @@
+/*
+ * Autor: Jefferson Ricardo / Paulo Victor
+ * Versão: 1.0
+ * Data de crialçao: 07/07/2020 18:56hs
+ * Referência: Folha de estilos (CSS)
+ * Conteúdo: Geral
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ * Facebook: https://www.facebook.com/jeffersonrmsilva
+ * Celular: 81 99668-0318
+ *
+ * Facebook: https://www.facebook.com/profile.php?id=100004332602666
+ * Celular: 81 98657-8987
+*/
+/**IMPORTACAO DE ARQUIVOS EXTERNO*/
+@import url('../plugins/bootstrap/css/bootstrap.min.css');
+/***/
+/*IMPORTACOES DE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+/**/
+/*CARREGAMENTO PAGE*/
+.carregamento-page{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.spin{
+	width: 64px;
+	height: 64px;
+	border-radius: 32px;
+	border:4px solid rgba(210,210,210,0.6);
+	border-left-color:  #A9E7D5;
+	animation: spin 1s linear infinite;
+}
+@keyframes spin{
+	to{transform: rotate(360deg);}
+}
+/***/	
+/*HEADER*/
+*{
+	font-family: 'Days One', sans-serif;
+}
+h2{
+	margin: 0 !important;
+	padding: 0!important;
+}
+header{
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	background-color: transparent;
+	padding: 30px 5%;  
+}
+
+header a{
+	position: relative;
+	top: 10px;
+	padding: 10px 20px;
+	color:white !important;
+	background-color: #33B78F;
+	border-radius: 10px;
+}
+header.fixedTop{
+	display: none;
+	background-color: #A9E7D5;
+	border-bottom: 2px solid #fff;
+}
+.logo-projeto{
+	display: flex;
+	align-items: center;
+}
+.button-header{
+	text-align: right;
+}
+/***/
+/*BANNER*/
+.banner{
+	width: 100%;
+	height: 95vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.chamada-banner h1:after{
+	content: '';
+	width: 20%;
+	height: 5px;
+	display: block;
+	background-color: white;
+	margin: 10px auto;
+	border-radius: 3px;
+}
+/***/
+/*SECTION MAPA DO BRASIL*/
+.estatisticas-mapa{
+	width: 100%;
+	padding: 50px 5%;
+}
+.estatisticas-mapa .container-map{
+	margin-top: 50px;
+}
+.estatisticas-mapa .container-map img{
+	width: 70%;
+}
+.classificacao-dados{
+	margin-top: 70px;
+}
+/**/
+/*VALOR TOTAL*/
+.valor-total{
+	background-color: rgba(0,0,0,0.2);
+}
+.overlap-valor-total{
+	padding: 100px 5%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+}
+.overlap-valor-total h2{
+	font-size: 60px;
+}
+/***/
+/*CARD DOACOES*/
+.card-doacoes-lugares{
+	padding: 40px;
+}
+.overlap-doacoes{
+	width: 100%;
+	height: 100%;
+	padding: 40px 2%;
+	/*background-color: rgba(0,0,0,0.5);*/
+}
+.listar-card{
+	margin-top: 50px;
+}
+/**/	
+/*DOACAO*/
+.doacao{
+	margin-top: 50px;
+}
+.overlap-contato{
+	padding: 30px;
+	width: 100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.4);
+}
+.card{
+	padding: 20px;
+}
+/**/
+/*CARD MOTIVOS*/
+.card-imagem img{
+	width: 100px;
+}
+/***/
+
+/*FOOTER*/
+footer{
+	padding: 40px 5%;
+	background-color: #A9E7D5;
+	border-top: 2px solid #000;
+}
+footer a{
+	
+}
+/***/
+/**CORES POSICÕES*/
+.green-5{
+	background-color: #33B78F;
+}
+.green-4{
+	background-color: #54CFAA;
+}
+.green-3{
+	background-color: #77D9BB;
+}
+.green-2{
+	background-color: #8FE0C8;
+}
+.green-1{
+	background-color: #A9E7D5;
+}
+/***/
+/*BACKGROUND*/
+.gb-cover{
+	background-size: cover;
+}
+.bg-center{
+	background-position: center;
+}
+.bg-fized{
+	background-attachment: fixed;
+}
