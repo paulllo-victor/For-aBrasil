@@ -176,179 +176,34 @@
 		
 		<!-- FORMULARIO DOACAO -->
 		<section class="doacao" id="doacao">
-			<div class="container">
-				<h2 class="text-center">Faça sua doação</h2>
+			<div class="container text-center">
+				<h2>Faça sua doação e represente sua região</h2>
+				<p>Todos nos por um mesmo ideal</p>
 				<hr>
-					<div class="tab-content" id="pills-tabContent">
-					  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-					  	<form>	
-					  		<div class="form-group">
-							     <h4>Informações pessoais do doador</h4>
-							</div>				  		
-					  		<div class="form-group col-6 p-0">
-							    <label for="inputCpf">CPF/CNPJ:</label>
-							    <input type="text" class="form-control cpf" id="inputCpf" placeholder="xxx.xxx.xxx-xx" required>
-							</div>
-							<hr>
-							<div class="form-group">
-							    <label for="inputNome">Nome Completo:</label>
-							    <input type="text" class="form-control" id="inputNome" required>
-							</div>
-							<div class="form-group">
-							    <label for="inputEmail">E-mail:</label>
-							    <input type="email" class="form-control" id="inputEmail" required>
-							</div>
-							<div class="form-group">
-							    <label for="inputTelefone">Telefone:</label>
-							    <input type="email" class="form-control telefone" id="inputTelefone" placeholder="(xx) xxxxx-xxxx" required>
-							</div>
-							<div class="form-group">
-							    <label for="inputDataNascimento">Data de Nascimento:</label>
-							    <input type="email" class="form-control date" id="inputDataNascimento" placeholder="dia/mês/ano" required>
-							</div>
-							<hr>
-							<div class="form-group">
-							     <h4>Informações do endereço</h4>
-							</div>	
-							<div class="form-group col-6 p-0">
-							    <label for="inputCep">CEP:</label>
-							    <input type="text" class="form-control cep" id="inputCep" placeholder="" required>
-							</div>
-							<div class="form-group">
-							    <label for="inputRua">Rua:</label>
-							    <input type="text" class="form-control" id="inputRua" required>
-							</div>
-							<div class="form-group">
-							    <label for="inputNum">Numero residencial:</label>
-							    <input type="text" class="form-control soNumero" id="inputNum" placeholder="" required>
-							</div>
-							<div class="form-group">
-							    <label for="inputBairro">Bairro:</label>
-							    <input type="text" class="form-control" id="inputBairro" placeholder="" required>
-							</div>
-							<div class="row "> 
-								<div class="form-group  col-md-8">
-							    <label for="inputCidade">Cidade:</label>
-							    <input type="text" class="form-control" id="inputCidade" required>
-							</div>
-								 <div class="form-group col-md-4">
-							      <label for="inputState">Estado</label>
-							      <select id="inputState" class="form-control" required>
-							        <option selected disabled style="background-color: rgba(120,120,120,0.4);">Região Nordeste</option>
-							        <option value="MA">Maranhão (MA)</option>
-							        <option value="PI">Piauí (PI)</option>
-							        <option value="CE">Ceará (CE)</option>
-							        <option value="RN">Rio Grande do Norte (RN)</option>
-							        <option value="PE">Pernambuco (PE)</option>
-							        <option value="PB">Paraíba (PB)</option>
-							        <option value="SE">Sergipe (SE)</option>
-							        <option value="AL">Alagoas (AL)</option>
-							        <option value="BA">Bahia (BA)</option>
-							        <option disabled style="background-color: rgba(120,120,120,0.4);">Região Norte</option>
-							        <option value="AM">Amazonas (AM)</option>
-							        <option value="RR">Roraima (RR)</option>
-							        <option value="AP">Amapá (AP)</option>
-							        <option value="PA">Pará (PA)</option>
-							        <option value="TO">Tocantins (TO)</option>
-							        <option value="RO">Rondônia (RO)</option>
-							        <option value="AC">Acre (AC)</option>
-							        <option disabled style="background-color: rgba(120,120,120,0.4);">Região Centro Oeste</option>
-							        <option value="MT">Mato Grosso (MT)</option>
-							        <option value="MS">Mato Grosso do Sul (MS)</option>
-							        <option value="GO">Goiás (GO)</option>
-							        <option disabled style="background-color: rgba(120,120,120,0.4);">Região Sudeste</option>
-							        <option value="SP">São Paulo (SP)</option>
-							        <option value="RJ">Rio de Janeiro (RJ)</option>
-							        <option value="ES">Espírito Santo (ES)</option>
-							        <option value="MG">Minas Gerais (MG</option>
-							        <option disabled style="background-color: rgba(120,120,120,0.4);">Região Sul</option>
-							        <option value="PR">Paraná (PR)</option>
-							        <option value="RS">Rio Grande do Sul (RS)</option>
-							        <option value="SC">Santa Catarina (SC)</option>
-							      </select>
-							    </div>							    
-							</div>
-							<hr>
-							<div class="form-group">
-							    <h4>Informações do pagamento</h4>
-							</div>
-							<div class="form-group">
-							    <label for="inputNumCartao">Número do cartão:</label>
-							    <input type="text" class="form-control soNumero" id="inputNumCartao" placeholder="" required>
-							</div>
-							<div class="row">
-								<div class="form-group col-md-3">
-							      <label for="inputBrandeira">Bandeira:</label>
-							      <select id="inputBrandeira" class="form-control">
-							        <option selected>Visa</option>
-							        <option>MasterCard</option>
-							        <option>Elo</option>
-							        <option>Hipercard</option>
-							      </select>
-							    </div>
-							    <div class="form-group col-md-3">
-							      <label for="inputMesVencimento">Mês de Venc:</label>
-							      <select id="inputMesVencimento" class="form-control">
-							      	<option selected>Mês</option>
-							      	<?php 
-							      		for($i = 1; $i <= 12; $i++){
-							      		 	echo "<option value=".$i.">".$i."</option>";
-							      		}
-							      	?>							        
-							        
-							      </select>
-							    </div>
-							    <div class="form-group col-md-3">
-							      <label for="inputCodigo">CVV:</label>
-							      <input type="text" class="form-control soNumero" id="inputCodigo" required>
-							    </div>
-							    <div class="form-group col-md-3">
-							      <label for="inputVencimento">Ano de Venc:</label>
-							      <select id="inputVencimento" class="form-control">
-							        <option selected>Ano</option>
-							        <?php 
-							        	for($i = 2020; $i <= 2050; $i++){
-							        	echo "<option value=".$i.">".$i."</option>";
-							        }
-							        ?>
-							      </select>
-							    </div>
-							</div>
-							<div class="form-group">
-							    <label for="inputNumCartao">Valor da doação:</label>
-							    <input type="text" class="form-control money" id="inputNumCartao" placeholder="" required>
-							</div>
-							<button type="submit" class="btn btn-primary">Doar</button>
-					  	</form>
-					  </div>
-				</div>
-		</section>
-		<!-- FIM FORMULARIO DOACAO -->
-		<!-- FORMULARIO DUVIDA -->
-		<section class="doacao text-white gb-cover" style="background-image: url('imagens/background/contato.jpg'); background-repeat: no-repeat;">
-			<div class="overlap-contato">
-				<div class="container">
-				<h2 class="text-center">TIRE SUAS DÚVIDAS</h2>
-				<div>
-					<form>
-					  <div class="form-row">
-					  	<div class="form-group col-md-12">
-					      <label for="inputEmail4">Nome *</label>
-					      <input type="text" class="form-control" id="inputEmail4" required>
-					    </div>
-					    <div class="form-group col-md-12">
-					      <label for="inputEmail4">Email *</label>
-					      <input type="email" class="form-control" id="inputEmail4" required>
-					    </div>
-					  </div>
-					  <label for="inputEmail4">Email *</label>
-					  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-					  <label>* Campo Obrigatório</label>
-					  <br/>
-					  <button type="submit" class="btn btn-primary">Enviar</button>
-					</form>
-				</div>
-			</div>
+				<div style="width: 50%; margin: 0 auto">
+					<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+				        <option selected disabled="">Escolha sua região</option>
+				        <option value="1">Centro Oeste</option>
+				        <option value="2">Nordeste</option>
+				        <option value="3">Norte</option>
+				        <option value="4">Sudeste</option>
+				        <option value="5">Sul</option>
+	  				</select>
+				</div>	
+				<br>
+				<div class="row">
+					<div class="col-md-12">
+						<button type="button" class="btn green-1" onclick="window.open('https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow/1692fb7c-07be-47f0-818e-32721c4c8c39');">R$ 10,00</button>
+						<button type="button" class="btn green-2" onclick="window.open('https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow/de6a130e-384a-47e0-9edb-6ec26698cc7f');">R$ 20,00</button>
+						<button type="button" class="btn green-3" onclick="window.open('https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow/72442a2c-d9e7-476f-8c81-9aa5b37f50d3');">R$ 50,00</button>
+						<button type="button" class="btn green-4" onclick="window.open('https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow/1e2f0cf5-6e32-4a6b-8f30-a57c35b2a800');">R$ 100,00</button>
+						<button type="button" class="btn green-5" onclick="window.open('https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow/9a2867c5-e277-49d1-a824-7b37819ed2ed');">R$ 1000,00</button>
+					</div>
+				</div>	
+				<hr>
+				<br>
+				<p><u>Instruções: Escolha sua região e clique no valor da doação, você será redirecionado para página de pagamento.</u></p>		
+				<br>	
 			</div>
 		</section>
 		<!-- FIM FORMULARIO DUVIDA -->

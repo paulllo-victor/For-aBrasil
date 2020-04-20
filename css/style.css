@@ -13,6 +13,7 @@
 */
 /**IMPORTACAO DE ARQUIVOS EXTERNO*/
 @import url('../plugins/bootstrap/css/bootstrap.min.css');
+@import url('styleAgradecimento.css');
 /***/
 /*IMPORTACOES DE FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
@@ -153,6 +154,9 @@ header.fixedTop{
 .card{
 	padding: 20px;
 }
+.btn{
+	margin: 0 30px;
+}
 /**/
 /*CARD MOTIVOS*/
 .card-imagem img{
@@ -196,4 +200,9 @@ footer a{
 }
 .bg-fized{
 	background-attachment: fixed;
+}
+@media screen and (max-width:1000px ){
+	.btn{
+		margin: 10px 10px;
+	}
 }
