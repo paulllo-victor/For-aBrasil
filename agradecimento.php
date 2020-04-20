@@ -28,7 +28,7 @@
 			<br>
 			Para te falar tudo onde foi destinado o seu investimento</h6>
 			<br>
-			<button type="button" class="btn btn-success">Retornar ao site</button>	
+			<button type="button" class="btn btn-success" onclick="window.location.href = 'index.php';">Retornar ao site</button>	
 			<br>
 			<br>
 			<p>Tire print e compatilhe, nos ajude a engajar mais pessoas nessa causa!</p>
